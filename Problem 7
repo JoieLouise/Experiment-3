@@ -4,16 +4,31 @@ using namespace std;
 
 int main()
 {
-    int a, sum = 0;
+    int a, sum;
 
-    cout << "Enter any number: ";
+a = 0;
+sum = 0;
+
+cout << "Enter any number: ";
     cin >> a;
-
-    for (int b = 1; b <= a; b++) 
-    {
+    
+while (a>0)
+	{
+		for (int b = 1; b <= a; b++) 
+   		{
         sum += b;
-    }
+    	}
+	 cout << "The sum from the numbers of 1 to "<< a << " is " << sum << "." << endl;
+	 cout << "Enter any number: ";
+    cin >> a;
+    sum = 0;
+	}
 
-    cout << "The sum from the numbers of 1 to "<< a << " is " << sum;
+while(a != 0 && a <= 0)
+{
+
+    cout<<"Thank You!";
+    break;
+}
     return 0;
 }

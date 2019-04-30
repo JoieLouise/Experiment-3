@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b;
+
+    cout << "Enter any number: ";
+    cin >> a;
+    cout<< "\n\nMultiplication Table";
+
+    for (b = 1; b <= 10; ++b)
+	{
+        cout << "\n"<< a << " * " << b << " = " << a * b << endl;
+    }
+    
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	double waterconsumption, latecharge, billsunpaid, watercost, watercharge, water;
+	// declaration
+	watercharge = 35;
+	latecharge = 20;
+	
+	cout << "Please Enter How Many Gallons Of Water Is Used: " << endl; 
+	cin >> water;
+	cout << "\nUnpaid Balance Remaining From Last Month: " << endl; 
+	cin >> billsunpaid;
+	
+	if (billsunpaid > 0)
+	{
+		waterconsumption = water * 1.10;
+		watercost = watercharge + waterconsumption + billsunpaid + latecharge;
+		cout << "\nYour Total Water Bill Is: " << watercost << " Pesos" << endl;
+	}
+	
+	else 
+	{
+		waterconsumption = water * 1.10;
+		watercost = watercharge + waterconsumption;
+		cout << "\nYour Total Water Bill Is: " << watercost << " Pesos" << endl;
+	}
+  
+return 0;
+}
